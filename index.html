@@ -1,0 +1,2594 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الدكتورة حنان المراكبي | HM Marketing & Design</title>
+  <meta name="description" content="وكالة الدكتورة حنان المراكبي HM لحلول التسويق الرقمي وبناء الهويات البصرية والحملات الإعلانية الممولة بأعلى عائد استثماري." />
+  <meta property="og:title" content="الدكتورة حنان المراكبي | HM Marketing & Design" />
+  <meta property="og:description" content="حلول تسويق وتصميم متكاملة تقود علامتك التجارية نحو النمو والتصدر" />
+  <meta property="og:image" content="/logo.png" />
+  <link rel="icon" type="image/png" href="/logo.png" />
+  
+  <!-- Google Fonts: Cairo & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 RTL CSS & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ============================================================
+       BRAND COLOR SYSTEM (60% Cream / 30% Burgundy / 10% Gold)
+       ============================================================ */
+    :root {
+      --bg-main: #FCF1E5;
+      --bg-surface: #FFFFFF;
+      --bg-surface-alt: #F6DFCC;
+      --bg-surface-glass: rgba(255, 255, 255, 0.94);
+      --text-main: #241413;
+      --text-muted: #6B514C;
+      --text-heading: #4B0C0A;
+      
+      --color-burgundy-deep: #4B0C0A;
+      --color-burgundy: #652728;
+      --color-burgundy-light: #F5E8E7;
+      --color-gold: #B17E3E;
+      --color-gold-hover: #C99750;
+      --color-gold-light: #FBF5EA;
+      --color-cream: #F6DFCC;
+      --color-cream-soft: #FCF1E5;
+      
+      --border-color: rgba(75, 12, 10, 0.12);
+      --border-color-focus: rgba(177, 126, 62, 0.5);
+      --card-shadow: 0 10px 30px rgba(75, 12, 10, 0.06);
+      --card-shadow-hover: 0 20px 40px rgba(75, 12, 10, 0.15);
+      --navbar-bg: rgba(252, 241, 229, 0.96);
+      --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      --bg-main: #1D0605;
+      --bg-surface: #280B0A;
+      --bg-surface-alt: #36100F;
+      --bg-surface-glass: rgba(40, 11, 10, 0.94);
+      --text-main: #FFF9F2;
+      --text-muted: #DCC2A9;
+      --text-heading: #F6DFCC;
+      
+      --color-burgundy-deep: #B97878;
+      --color-burgundy: #D2A5A5;
+      --color-burgundy-light: #3C0602;
+      --color-gold: #D9B57F;
+      --color-gold-hover: #E8D0AD;
+      --color-gold-light: rgba(177, 126, 62, 0.18);
+      --color-cream: #321A18;
+      --color-cream-soft: #241413;
+      
+      --border-color: rgba(246, 223, 204, 0.12);
+      --border-color-focus: rgba(217, 181, 127, 0.5);
+      --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      --card-shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.7);
+      --navbar-bg: rgba(29, 6, 5, 0.96);
+    }
+
+    /* Base Setup */
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+      scrollbar-width: thin;
+      scrollbar-color: #652728 #F6DFCC;
+    }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.7;
+      transition: background-color 0.35s ease, color 0.35s ease;
+      overflow-x: hidden;
+    }
+
+    /* Custom Burgundy Brand Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F6DFCC;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #4B0C0A 0%, #652728 100%);
+      border-radius: 8px;
+      border: 2px solid #F6DFCC;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #652728 0%, #B17E3E 100%);
+    }
+
+    /* Dark Mode Burgundy Scrollbar */
+    [data-theme="dark"] html {
+      scrollbar-color: #8E3839 #1D0605;
+    }
+    [data-theme="dark"] ::-webkit-scrollbar-track {
+      background: #1D0605;
+    }
+    [data-theme="dark"] ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #4B0C0A 0%, #8E3839 100%);
+      border: 2px solid #1D0605;
+    }
+    [data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #8E3839 0%, #D9B57F 100%);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-heading);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    /* Scroll Progress Bar with Burgundy & Gold */
+    #scrollProgress {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #4B0C0A, #652728, #B17E3E, #C99750);
+      z-index: 1090;
+      width: 0%;
+      transition: width 0.1s ease;
+    }
+
+    /* Utilities */
+    .text-gold { color: var(--color-gold) !important; }
+    .bg-gold { background-color: var(--color-gold) !important; }
+    .text-burgundy { color: var(--color-burgundy-deep) !important; }
+    .bg-burgundy { background-color: var(--color-burgundy-deep) !important; }
+    .bg-surface { background-color: var(--bg-surface) !important; }
+    .bg-surface-alt { background-color: var(--bg-surface-alt) !important; }
+    .border-theme { border-color: var(--border-color) !important; }
+
+    /* ============================================================
+       TOP ANNOUNCEMENT BAR (WITH ALL SOCIAL MEDIA LINKS ON LEFT)
+       ============================================================ */
+    .top-bar {
+      background-color: #3C0602;
+      color: #FFF9F2;
+      font-size: 0.82rem;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(177, 126, 62, 0.25);
+    }
+    .top-social-link {
+      color: #F6DFCC;
+      font-size: 0.85rem;
+      width: 27px;
+      height: 27px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      transition: var(--transition-smooth);
+      text-decoration: none;
+    }
+    .top-social-link:hover {
+      background: #B17E3E;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+    .top-contact-link {
+      color: #F6DFCC;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .top-contact-link:hover {
+      color: #B17E3E;
+    }
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      background-color: #10B981;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulse-green 2s infinite;
+    }
+    @keyframes pulse-green {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { box-shadow: 0 0 0 7px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    /* ============================================================
+       STICKY NAVBAR (WITH LOGO, SMALLER REFINED LINKS, SIDE DRAWER)
+       ============================================================ */
+    .navbar-hm {
+      position: sticky;
+      top: 0;
+      z-index: 1040;
+      background-color: var(--navbar-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition-smooth);
+      padding: 10px 0;
+    }
+    .navbar-hm.scrolled {
+      padding: 7px 0;
+      box-shadow: var(--card-shadow);
+    }
+    .brand-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-logo-img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid var(--color-gold);
+      box-shadow: 0 4px 14px rgba(177, 126, 62, 0.28);
+      transition: var(--transition-smooth);
+    }
+    .brand-logo-wrap:hover .brand-logo-img {
+      transform: scale(1.08) rotate(-3deg);
+      box-shadow: 0 6px 18px rgba(177, 126, 62, 0.45);
+    }
+    .brand-text-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .brand-title-ar {
+      font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+      font-weight: 800;
+      color: var(--text-heading);
+      line-height: 1.2;
+      margin: 0;
+      white-space: nowrap;
+      text-align: center;
+      width: 100%;
+    }
+    .brand-title-sub {
+      font-size: 0.55rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      letter-spacing: 0.16em;
+      margin: 2px 0 0 0;
+      text-transform: uppercase;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      white-space: nowrap;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+
+    /* Smaller refined navbar links for balanced spacing */
+    .nav-link-hm {
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 6px 9px !important;
+      border-radius: 6px;
+      position: relative;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-link-hm:hover, .nav-link-hm.active {
+      color: var(--color-gold) !important;
+      background-color: var(--color-gold-light);
+    }
+
+    /* Side Menu Drawer Button */
+    .btn-side-menu {
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      color: var(--text-heading);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .btn-side-menu:hover {
+      background: var(--color-gold-light);
+      border-color: var(--color-gold);
+      color: var(--color-gold);
+    }
+
+    /* Offcanvas Side Menu */
+    .offcanvas-hm {
+      background-color: var(--bg-surface);
+      color: var(--text-main);
+      border-left: 2px solid var(--color-gold) !important;
+      width: 320px !important;
+    }
+    .offcanvas-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      margin-bottom: 6px;
+      transition: var(--transition-smooth);
+      border: 1px solid transparent;
+    }
+    .offcanvas-link:hover, .offcanvas-link.active {
+      background-color: var(--color-gold-light);
+      color: var(--color-gold);
+      border-color: var(--border-color);
+      transform: translateX(-5px);
+    }
+
+    /* Buttons with Hover Shine */
+    .btn-gold {
+      background: linear-gradient(135deg, #B17E3E 0%, #C99750 100%);
+      color: #FFFFFF !important;
+      border: none;
+      font-weight: 700;
+      padding: 9px 20px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(177, 126, 62, 0.3);
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 0.88rem;
+    }
+    .btn-gold::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 40%;
+      height: 200%;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+      transform: rotate(25deg);
+      transition: all 0.75s ease;
+    }
+    .btn-gold:hover::after {
+      left: 130%;
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(177, 126, 62, 0.45);
+      color: #FFFFFF !important;
+    }
+
+    .btn-outline-hm {
+      border: 1.5px solid var(--color-gold);
+      color: var(--text-heading) !important;
+      background: transparent;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 10px;
+      transition: var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 0.88rem;
+    }
+    .btn-outline-hm:hover {
+      background-color: var(--color-gold);
+      color: #FFFFFF !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(177, 126, 62, 0.28);
+    }
+
+    /* Theme Toggle Pill */
+    .theme-toggle-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-surface);
+      color: var(--color-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .theme-toggle-btn:hover {
+      transform: rotate(25deg) scale(1.08);
+      border-color: var(--color-gold);
+    }
+
+    /* ============================================================
+       HERO SECTION WITH GROWTH IMAGE
+       ============================================================ */
+    .hero-section {
+      position: relative;
+      padding: 75px 0 55px 0;
+      overflow: hidden;
+      background: radial-gradient(circle at 10% 20%, var(--color-gold-light) 0%, transparent 45%),
+                  radial-gradient(circle at 90% 80%, rgba(101, 39, 40, 0.08) 0%, transparent 50%);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 15px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-burgundy-deep);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-size: clamp(2.1rem, 3.8vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 22px;
+    }
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 580px;
+      line-height: 1.8;
+    }
+    .hero-img-container {
+      position: relative;
+      border-radius: 24px;
+      padding: 10px;
+      background: linear-gradient(135deg, rgba(177, 126, 62, 0.4), rgba(75, 12, 10, 0.2));
+      box-shadow: var(--card-shadow-hover);
+    }
+    .hero-img-main {
+      width: 100%;
+      height: 410px;
+      object-fit: cover;
+      border-radius: 18px;
+      transition: var(--transition-smooth);
+      display: block;
+    }
+    .hero-img-container:hover .hero-img-main {
+      transform: scale(1.02);
+    }
+    
+    .hero-float-card {
+      position: absolute;
+      background: var(--bg-surface-glass);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 12px 18px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 2;
+      transition: var(--transition-smooth);
+    }
+    .hero-float-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-gold);
+    }
+    .hero-float-1 {
+      top: -18px;
+      left: -15px;
+      animation: float-slow 5s ease-in-out infinite;
+    }
+    .hero-float-2 {
+      bottom: -18px;
+      right: -15px;
+      animation: float-slow 6s ease-in-out infinite 1s;
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* ============================================================
+       PREVIOUS STATS SECTION WITH ANIMATED COUNTERS
+       ============================================================ */
+    .stat-box {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition-smooth);
+      height: 100%;
+    }
+    .stat-box:hover {
+      transform: translateY(-6px);
+      border-color: var(--color-gold);
+      box-shadow: var(--card-shadow-hover);
+    }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-gold);
+      line-height: 1.1;
+      font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif;
+    }
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-top: 6px;
+      margin-bottom: 0;
+    }
+
+    /* Section Headers */
+    .section-tag {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--color-gold);
+      background-color: var(--color-gold-light);
+      padding: 4px 16px;
+      border-radius: 30px;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 650px;
+      margin: 0 auto 50px auto;
+    }
+
+    /* ============================================================
+       PREVIOUS DETAILED SERVICE CARDS WITH CHECKLISTS & HOVER
+       ============================================================ */
+    .service-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 32px 26px;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition-smooth);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-gold), var(--color-burgundy));
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--color-gold);
+      box-shadow: var(--card-shadow-hover);
+    }
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+    .service-icon-wrap {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--color-gold-light), rgba(177,126,62,0.15));
+      color: var(--color-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 22px;
+      transition: var(--transition-smooth);
+    }
+    .service-card:hover .service-icon-wrap {
+      background: linear-gradient(135deg, #B17E3E, #652728);
+      color: #FFFFFF;
+      transform: scale(1.1) rotate(5deg);
+    }
+    .service-feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 24px 0;
+      flex-grow: 1;
+    }
+    .service-feature-list li {
+      margin-bottom: 8px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-feature-list li i {
+      color: var(--color-gold);
+      font-size: 1rem;
+    }
+
+    /* ============================================================
+       PREVIOUS DETAILED INTERACTIVE ROI CALCULATOR
+       ============================================================ */
+    .calculator-card {
+      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-surface-alt) 100%);
+      border: 2px solid var(--color-gold);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: var(--card-shadow-hover);
+    }
+    .calc-range {
+      accent-color: var(--color-gold);
+      height: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .calc-stat-pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+    .calc-stat-pill:hover {
+      border-color: var(--color-gold);
+      transform: translateY(-4px);
+    }
+
+    /* ============================================================
+       PREVIOUS 5-STEP ROADMAP
+       ============================================================ */
+    .process-step {
+      position: relative;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 30px 24px;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition-smooth);
+      height: 100%;
+    }
+    .process-step:hover {
+      transform: translateY(-8px);
+      border-color: var(--color-gold);
+      box-shadow: var(--card-shadow-hover);
+    }
+    .process-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-burgundy-deep);
+      color: #FFF9F2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 18px;
+      border: 2px solid var(--color-gold);
+      box-shadow: 0 4px 10px rgba(177, 126, 62, 0.3);
+    }
+
+    /* ============================================================
+       PREVIOUS PORTFOLIO WITH 6 CARDS & CATEGORY FILTERS
+       ============================================================ */
+    .portfolio-filter-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+    .portfolio-filter-btn.active, .portfolio-filter-btn:hover {
+      background-color: var(--color-gold);
+      border-color: var(--color-gold);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+    .portfolio-card {
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--card-shadow);
+      transition: var(--transition-smooth);
+      height: 100%;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--card-shadow-hover);
+      border-color: var(--color-gold);
+    }
+    .portfolio-img-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 220px;
+      background-color: var(--color-burgundy-light);
+    }
+    .portfolio-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .portfolio-card:hover .portfolio-img {
+      transform: scale(1.08);
+    }
+    .portfolio-badge-metric {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(75, 12, 10, 0.9);
+      color: #FFF9F2;
+      padding: 4px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 1px solid var(--color-gold);
+    }
+
+    /* ============================================================
+       PREVIOUS PRICING TIERS
+       ============================================================ */
+    .pricing-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 36px 28px;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition-smooth);
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .pricing-card.popular {
+      border: 2px solid var(--color-gold);
+      background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-surface-alt) 100%);
+      transform: scale(1.03);
+    }
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--card-shadow-hover);
+    }
+    .pricing-card.popular:hover {
+      transform: translateY(-8px) scale(1.03);
+    }
+    .popular-ribbon {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #B17E3E, #C99750);
+      color: #FFFFFF;
+      padding: 4px 18px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(177, 126, 62, 0.35);
+    }
+
+    /* ============================================================
+       PREVIOUS FAQ ACCORDION
+       ============================================================ */
+    .accordion-hm .accordion-item {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px !important;
+      margin-bottom: 14px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition-smooth);
+    }
+    .accordion-hm .accordion-item:hover {
+      border-color: var(--color-gold);
+    }
+    .accordion-hm .accordion-button {
+      background-color: var(--bg-surface);
+      color: var(--text-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 18px 24px;
+      box-shadow: none !important;
+    }
+    .accordion-hm .accordion-button:not(.collapsed) {
+      color: var(--color-gold);
+      background-color: var(--color-gold-light);
+    }
+    .accordion-hm .accordion-body {
+      color: var(--text-muted);
+      line-height: 1.8;
+      padding: 18px 24px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* ============================================================
+       PREVIOUS CONTACT FORM & PILLS
+       ============================================================ */
+    .contact-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: var(--card-shadow);
+    }
+    .form-control-hm, .form-select-hm {
+      background-color: var(--bg-surface-alt);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 500;
+      transition: var(--transition-smooth);
+    }
+    .form-control-hm:focus, .form-select-hm:focus {
+      background-color: var(--bg-surface);
+      border-color: var(--color-gold);
+      box-shadow: 0 0 0 4px var(--border-color-focus);
+      color: var(--text-main);
+      outline: none;
+    }
+    .contact-info-pill {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      padding: 18px;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      transition: var(--transition-smooth);
+      text-decoration: none;
+      color: inherit;
+    }
+    .contact-info-pill:hover {
+      border-color: var(--color-gold);
+      transform: translateX(-6px);
+      box-shadow: var(--card-shadow);
+      color: var(--color-gold);
+    }
+
+    /* ============================================================
+       WHATSAPP FLOATING BUTTON (FLOAT-UP & RED NOTIFICATION DOT)
+       ============================================================ */
+    .whatsapp-float-container {
+      position: fixed;
+      bottom: 28px;
+      left: 28px;
+      z-index: 1060;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .whatsapp-btn {
+      width: 62px;
+      height: 62px;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #FFFFFF !important;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      animation: float-up-down 3s ease-in-out infinite;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.15) rotate(-5deg);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+      color: #FFFFFF !important;
+    }
+    .whatsapp-btn::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(37, 211, 102, 0.4);
+      animation: whatsapp-wave 2s infinite;
+      z-index: -1;
+    }
+    @keyframes whatsapp-wave {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+    @keyframes float-up-down {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .wa-red-dot {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 18px;
+      height: 18px;
+      background-color: #EF4444;
+      color: #FFFFFF;
+      font-size: 10px;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 2px 6px rgba(239, 68, 68, 0.6);
+      animation: red-dot-ping 2s infinite;
+    }
+    @keyframes red-dot-ping {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    .wa-popup-bubble {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(-15px);
+      transition: var(--transition-smooth);
+      white-space: nowrap;
+    }
+    .whatsapp-float-container:hover .wa-popup-bubble {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Back to Top Button */
+    .back-to-top-btn {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--color-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: var(--card-shadow);
+      z-index: 1050;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-smooth);
+    }
+    .back-to-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .back-to-top-btn:hover {
+      background: var(--color-gold);
+      color: #FFFFFF;
+      transform: translateY(-4px);
+    }
+
+    /* ============================================================
+       PREVIOUS RICH 4-COLUMN FOOTER
+       ============================================================ */
+    .footer-hm {
+      background-color: #241413;
+      color: #FFF9F2;
+      padding: 65px 0 25px 0;
+      border-top: 3px solid var(--color-gold);
+    }
+    .footer-hm a {
+      color: #DCC2A9;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+    .footer-hm a:hover {
+      color: #B17E3E;
+      padding-right: 5px;
+    }
+    .social-icon-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(246, 223, 204, 0.08);
+      border: 1px solid rgba(177, 126, 62, 0.3);
+      color: #F6DFCC;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 8px;
+      transition: var(--transition-smooth);
+      text-decoration: none !important;
+    }
+    .social-icon-btn:hover {
+      background-color: var(--color-gold);
+      color: #FFFFFF !important;
+      transform: translateY(-3px);
+      padding-right: 0 !important;
+    }
+
+    @media (max-width: 991px) {
+      .hero-section {
+        padding: 40px 0;
+      }
+      .hero-img-main {
+        height: 320px;
+      }
+      .hero-float-1, .hero-float-2 {
+        position: static;
+        margin-top: 15px;
+      }
+      .pricing-card.popular {
+        transform: none;
+      }
+    }
+    @media (max-width: 576px) {
+      .whatsapp-float-container {
+        bottom: 18px;
+        left: 18px;
+      }
+      .back-to-top-btn {
+        bottom: 18px;
+        right: 18px;
+      }
+      .wa-popup-bubble {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scrollProgress"></div>
+
+  <!-- ==========================================
+       TOP ANNOUNCEMENT BAR (WITH ALL SOCIAL MEDIA LINKS ON LEFT)
+       ========================================== -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Right Side (RTL): Contacts & Live Status -->
+      <div class="d-flex align-items-center gap-3">
+        <span><span class="live-dot me-1"></span> متاحون لاستقبال مشاريع تسويقية جديدة</span>
+        <span class="opacity-50 d-none d-sm-inline">|</span>
+        <a href="tel:+201000000000" class="top-contact-link d-none d-sm-inline"><i class="bi bi-telephone text-gold me-1"></i> 01000000000</a>
+        <span class="opacity-50 d-none d-md-inline">|</span>
+        <a href="mailto:contact@hananelmarakby.com" class="top-contact-link d-none d-md-inline"><i class="bi bi-envelope text-gold me-1"></i> contact@hananelmarakby.com</a>
+      </div>
+
+      <!-- Left Side: ALL Requested Social Media Links -->
+      <div class="d-flex align-items-center gap-1">
+        <a href="https://facebook.com" target="_blank" class="top-social-link" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="top-social-link" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me" target="_blank" class="top-social-link" title="تلجرام"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://youtube.com" target="_blank" class="top-social-link" title="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://x.com" target="_blank" class="top-social-link" title="تويتر / X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="top-social-link" title="لينكد إن"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://snapchat.com" target="_blank" class="top-social-link" title="سناب شات"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="https://tiktok.com" target="_blank" class="top-social-link" title="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       STICKY NAVBAR (WITH LOGO, REFINED LINKS, SIDE DRAWER)
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-hm" id="mainNavbar">
+    <div class="container">
+      <!-- Brand Logo with exact uploaded logo & smaller crisp subtitle -->
+      <a class="brand-logo-wrap" href="#hero">
+        <img src="/logo.png" alt="شعار الدكتورة حنان المراكبي" class="brand-logo-img" />
+        <div class="brand-text-col">
+          <h1 class="brand-title-ar">الدكتورة حنان المراكبي</h1>
+          <p class="brand-title-sub">HM MARKETING & DESIGN</p>
+        </div>
+      </a>
+
+      <!-- Controls on right for mobile & small screens -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="theme-toggle-btn" id="themeToggleBtnMobile" title="تبديل المظهر">
+          <i class="bi bi-moon-stars-fill" id="themeIconMobile"></i>
+        </button>
+        <button class="btn-side-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenuDrawer" aria-controls="sideMenuDrawer" title="القائمة الجانبية">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+      </div>
+
+      <!-- Desktop Nav Links with smaller font size and balanced spacing -->
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navContent">
+        <ul class="navbar-nav mx-auto mb-0 align-items-center">
+          <li class="nav-item"><a class="nav-link-hm active" href="#hero">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#about">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#services">خدماتنا</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#calculator">حاسبة العائد</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#process">خطة العمل</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#portfolio">أعمالنا</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#pricing">الباقات</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#testimonials">الآراء</a></li>
+          <li class="nav-item"><a class="nav-link-hm" href="#faq">الأسئلة</a></li>
+        </ul>
+
+        <!-- Right Action Items on Desktop -->
+        <div class="d-flex align-items-center gap-2">
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn" id="themeToggleBtn" title="تبديل بين الوضع الداكن والفاتح">
+            <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+          </button>
+          
+          <!-- Side Drawer Trigger Button (Requested Side Menu) -->
+          <button class="btn-side-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenuDrawer" aria-controls="sideMenuDrawer" title="القائمة الجانبية الكاملة">
+            <i class="bi bi-text-right fs-4"></i>
+          </button>
+
+          <!-- Contact CTA Button -->
+          <a href="#contact" class="btn-gold">
+            <i class="bi bi-chat-dots-fill"></i>
+            <span>تواصل معنا</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       OFFCANVAS SIDE MENU DRAWER (SLIDES FROM SIDE)
+       ========================================== -->
+  <div class="offcanvas offcanvas-start offcanvas-hm" tabindex="-1" id="sideMenuDrawer" aria-labelledby="sideMenuDrawerLabel">
+    <div class="offcanvas-header border-bottom border-theme p-3">
+      <div class="d-flex align-items-center gap-2">
+        <img src="/logo.png" alt="شعار الدكتورة حنان المراكبي" style="width: 44px; height: 44px; border-radius: 10px; border: 1.5px solid var(--color-gold); object-fit: cover;" />
+        <div class="brand-text-col">
+          <h5 class="mb-0 fw-bold text-heading brand-title-ar" id="sideMenuDrawerLabel" style="font-size: 1.05rem;">الدكتورة حنان المراكبي</h5>
+          <span class="brand-title-sub" style="font-size: 0.55rem; color: var(--color-gold); font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; font-family: 'Plus Jakarta Sans', sans-serif; display: block; text-align: center; width: 100%;">HM MARKETING & DESIGN</span>
+        </div>
+      </div>
+      <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
+    </div>
+    
+    <div class="offcanvas-body d-flex flex-column p-3">
+      <p class="small text-muted mb-3">شريكك الاستراتيجي لبناء العلامات التجارية ومضاعفة المبيعات عبر إعلانات دقيقة وتصميم راقٍ.</p>
+      
+      <!-- Side Navigation Links -->
+      <div class="mb-4">
+        <a class="offcanvas-link active" href="#hero" data-bs-dismiss="offcanvas"><i class="bi bi-house-door text-gold"></i> الرئيسية</a>
+        <a class="offcanvas-link" href="#about" data-bs-dismiss="offcanvas"><i class="bi bi-info-circle text-gold"></i> من نحن ورؤيتنا</a>
+        <a class="offcanvas-link" href="#services" data-bs-dismiss="offcanvas"><i class="bi bi-grid text-gold"></i> خدمات التسويق والتصميم</a>
+        <a class="offcanvas-link" href="#calculator" data-bs-dismiss="offcanvas"><i class="bi bi-calculator text-gold"></i> حاسبة العائد المتوقع</a>
+        <a class="offcanvas-link" href="#process" data-bs-dismiss="offcanvas"><i class="bi bi-diagram-3 text-gold"></i> خطة ومنهجية العمل</a>
+        <a class="offcanvas-link" href="#portfolio" data-bs-dismiss="offcanvas"><i class="bi bi-collection text-gold"></i> معرض الأعمال والنتائج</a>
+        <a class="offcanvas-link" href="#pricing" data-bs-dismiss="offcanvas"><i class="bi bi-tags text-gold"></i> باقات الأسعار والاستثمار</a>
+        <a class="offcanvas-link" href="#testimonials" data-bs-dismiss="offcanvas"><i class="bi bi-chat-quote text-gold"></i> آراء وقصص نجاح العملاء</a>
+        <a class="offcanvas-link" href="#faq" data-bs-dismiss="offcanvas"><i class="bi bi-question-circle text-gold"></i> الأسئلة المتكررة</a>
+        <a class="offcanvas-link" href="#contact" data-bs-dismiss="offcanvas"><i class="bi bi-envelope text-gold"></i> حجز استشارة مجانية</a>
+      </div>
+
+      <!-- Quick Contact Info inside Drawer -->
+      <div class="mt-auto pt-3 border-top border-theme">
+        <div class="d-flex align-items-center gap-2 mb-2 small">
+          <i class="bi bi-telephone-fill text-gold"></i>
+          <span>+20 100 000 0000</span>
+        </div>
+        <div class="d-flex align-items-center gap-2 mb-3 small">
+          <i class="bi bi-envelope-fill text-gold"></i>
+          <span>contact@hananelmarakby.com</span>
+        </div>
+        <a href="#contact" class="btn-gold w-100 justify-content-center mb-3" data-bs-dismiss="offcanvas">
+          <i class="bi bi-calendar-check"></i>
+          <span>احجز استشارتك الآن</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HERO SECTION WITH GROWTH IMAGE
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- Left Text Column -->
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="hero-badge">
+            <i class="bi bi-stars text-gold"></i>
+            <span>وكالة حنان المراكبي HM - رواد الحلول التسويقية والتصميمية</span>
+          </div>
+
+          <h2 class="hero-title">
+            نُحوّل علامتك التجارية إلى <span class="text-gold">قصة نجاح</span> تتصدر بها سوق المنافسة
+          </h2>
+
+          <p class="hero-subtitle">
+            نجمع بين قوة التحليل الرقمي والاستهداف الممنهج، وبين فخامة الهوية البصرية والتصميم الإبداعي، لنحقق لك مبيعات مضاعفة وعائداً استثمارياً حقيقياً (ROI) يفوق توقعاتك.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#contact" class="btn-gold btn-lg">
+              <i class="bi bi-rocket-takeoff-fill"></i>
+              <span>ابدأ مشروعك الآن</span>
+            </a>
+            <a href="#services" class="btn-outline-hm btn-lg">
+              <i class="bi bi-grid-fill"></i>
+              <span>استكشف خدماتنا</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="d-flex align-items-center gap-4 pt-3 border-top border-theme">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-shield-check fs-4 text-gold"></i>
+              <span class="fw-bold small">معتمدون في Meta و Google</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-patch-check-fill fs-4 text-gold"></i>
+              <span class="fw-bold small">+250 قصة نجاح فعلية</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image Column (Visualizing Marketing Growth) -->
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div class="hero-img-container">
+            <img src="/images/hero-growth.jpg" alt="نمو وتقدم في التسويق - حنان المراكبي" class="hero-img-main" />
+            
+            <!-- Floating Metric Card 1 -->
+            <div class="hero-float-card hero-float-1">
+              <div class="bg-gold text-white p-2 rounded-3">
+                <i class="bi bi-graph-up-arrow fs-4"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold text-gold" style="font-family: 'Plus Jakarta Sans';">+380%</h5>
+                <p class="mb-0 small fw-bold text-muted">متوسط نمو مبيعات عملائنا</p>
+              </div>
+            </div>
+
+            <!-- Floating Metric Card 2 -->
+            <div class="hero-float-card hero-float-2">
+              <div class="bg-burgundy text-white p-2 rounded-3">
+                <i class="bi bi-bullseye fs-4"></i>
+              </div>
+              <div>
+                <h5 class="mb-0 fw-bold text-heading" style="font-family: 'Plus Jakarta Sans';">8.5M+</h5>
+                <p class="mb-0 small fw-bold text-muted">وصول إعلاني شهري مستهدف</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       STATS & ACHIEVEMENTS STRIP (RESTORED PREVIOUS)
+       ========================================== -->
+  <section class="py-5 bg-surface-alt border-top border-bottom border-theme">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-box">
+            <div class="stat-number" data-target="250">250+</div>
+            <p class="stat-label">مشروع تسويقي ناجح</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-box">
+            <div class="stat-number" data-target="99">99.2%</div>
+            <p class="stat-label">نسبة رضا العملاء</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-box">
+            <div class="stat-number" data-target="15">15M+</div>
+            <p class="stat-label">مبيعات محققة لعملائنا</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-box">
+            <div class="stat-number" data-target="8">8+</div>
+            <p class="stat-label">سنوات من الخبرة والابتكار</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT SECTION (RESTORED PREVIOUS)
+       ========================================== -->
+  <section class="py-5" id="about">
+    <div class="container py-4">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5">
+          <div class="p-4 rounded-4 bg-surface border border-theme shadow">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <img src="/logo.png" alt="شعار الدكتورة حنان المراكبي" style="width: 70px; height: 70px; border-radius: 16px; border: 2px solid var(--color-gold); object-fit: cover;" />
+              <div>
+                <h4 class="mb-1 text-heading">الدكتورة حنان المراكبي | HM</h4>
+                <p class="text-gold mb-0 small fw-bold">مؤسسة واستشارية التسويق الرقمي والهوية</p>
+              </div>
+            </div>
+            <p class="text-muted">
+              "في عالم يضج بالإعلانات والمحتوى المكرر، نؤمن بأن النجاح الحقيقي لا يأتي من إنفاق المزيد، بل من الوصول الدقيق لقلب العميل وعقله برؤية استراتيجية وتصميم يليق بقيمة علامتك."
+            </p>
+            <div class="p-3 rounded-3 bg-surface-alt border border-theme mt-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-bold small">استراتيجية الأداء والتحويل (Performance)</span>
+                <span class="text-gold fw-bold small">98%</span>
+              </div>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-gold" style="width: 98%;"></div>
+              </div>
+            </div>
+            <div class="p-3 rounded-3 bg-surface-alt border border-theme mt-2">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="fw-bold small">التصميم الإبداعي والهوية البصرية</span>
+                <span class="text-gold fw-bold small">96%</span>
+              </div>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-gold" style="width: 96%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <span class="section-tag">لماذا تختار حنان المراكبي؟</span>
+          <h2 class="section-title">نحن لا نكتفي بالإعلانات، بل نبني لك أصولاً تجارية مستدامة</h2>
+          <p class="text-muted mb-4">
+            تتميز وكالة حنان المراكبي HM بدمج الهندسة التسويقية القائمة على تحليل البيانات الدقيقة مع الفن الإبداعي الراقي. نحن نرافقك في كل خطوة من تأسيس الهوية إلى تحويل الزائرين إلى عملاء دائمين ومخلصين.
+          </p>
+
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 p-3 rounded-3 bg-surface border border-theme h-100">
+                <i class="bi bi-graph-up text-gold fs-3"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">عائد استثماري مضمون (ROI)</h6>
+                  <p class="small text-muted mb-0">نراقب كل قرش يُصرف في الإعلانات ونوجهه ليحقق أعلى عائد ومبيعات.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 p-3 rounded-3 bg-surface border border-theme h-100">
+                <i class="bi bi-palette text-gold fs-3"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">هويات بصرية استثنائية</h6>
+                  <p class="small text-muted mb-0">تصاميم فاخرة تعكس هيبة علامتك التجارية وتمنحها طابعاً مميزاً لا ينسى.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 p-3 rounded-3 bg-surface border border-theme h-100">
+                <i class="bi bi-speedometer2 text-gold fs-3"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">تقارير وتحليلات أسبوعية</h6>
+                  <p class="small text-muted mb-0">شفافية مطلقة ولوحة تحكم توضح أرقام الوصول والمبيعات وتكلفة الاقتناء.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3 p-3 rounded-3 bg-surface border border-theme h-100">
+                <i class="bi bi-headset text-gold fs-3"></i>
+                <div>
+                  <h6 class="fw-bold mb-1">دعم وتوجيه استشاري مباشر</h6>
+                  <p class="small text-muted mb-0">تواصل مباشر مع فريق العمل وخطط تطوير مستمرة لمواكبة تحديات السوق.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SERVICES SECTION (RESTORED PREVIOUS 6 DETAILED CARDS)
+       ========================================== -->
+  <section class="py-5 bg-surface-alt border-top border-theme" id="services">
+    <div class="container py-4">
+      <div class="text-center">
+        <span class="section-tag">خدماتنا المتكاملة</span>
+        <h2 class="section-title">حلول تسويقية وتصميمية متكاملة لنمو أعمالك</h2>
+        <p class="section-subtitle">
+          نقدم لك حزمة متناسقة من الخدمات المتخصصة المصممة بعناية لتحقيق نتائج ملموسة ونمو متصاعد في السوق.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="bi bi-megaphone-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">إدارة الحملات الإعلانية الممولة</h4>
+            <p class="text-muted small">
+              تخطيط وإطلاق الحملات عبر منصات Meta (فيسبوك وانستجرام)، إعلانات تيك توك، جوجل وسناب شات مع تحسين تكلفة الشراء واستهداف دقيق.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> إعلانات إعادة الاستهداف (Retargeting)</li>
+              <li><i class="bi bi-check-circle-fill"></i> اختبارات A/B Testing للنسخ الإعلانية</li>
+              <li><i class="bi bi-check-circle-fill"></i> تقليل تكلفة التحويل (CPA)</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm mt-auto w-100 justify-content-center">طلب الخدمة الآن</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="bi bi-brush-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">تصميم الهوية البصرية والبراندنج</h4>
+            <p class="text-muted small">
+              ابتكار هويات بصرية متكاملة تشمل الشعارات، باليتات الألوان، الخطوط، وتطبيقات العلامة التجارية والمطبوعات بدليل إرشادي شامل.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> تصميم شعار مميز وذاكرة بصرية قوية</li>
+              <li><i class="bi bi-check-circle-fill"></i> دليل إرشادي كامل للعلامة التجارية (Brand Guidelines)</li>
+              <li><i class="bi bi-check-circle-fill"></i> تصاميم التغليف وتطبيقات السوشيال ميديا</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm mt-auto w-100 justify-content-center">طلب الخدمة الآن</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="bi bi-camera-reels-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">صناعة المحتوى والإنتاج المرئي</h4>
+            <p class="text-muted small">
+              كتابة نصوص إعلانية مؤثرة (Copywriting) وصناعة مقاطع ريلز وتيك توك جذابة تروي قصة علامتك وتحرك المشاهد للشراء.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> سكريبتات إعلانية تخاطب نقاط ألم العميل</li>
+              <li><i class="bi bi-check-circle-fill"></i> مونتاج فيديوهات ريلز وسناكس جذابة</li>
+              <li><i class="bi bi-check-circle-fill"></i> تصاميم سوشيال ميديا مخصصة واحترافية</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm mt-auto w-100 justify-content-center">طلب الخدمة الآن</a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="bi bi-laptop-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">تصميم لاندينج بيدج ومتاجر إلكترونية</h4>
+            <p class="text-muted small">
+              تصميم وتطوير صفحات هبوط ومتاجر سريعة متجاوبة مع كافة الشاشات ومصممة هندسياً لرفع معدل التحويل والمبيعات.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> تجربة مستخدم UI/UX مبنية على السلوك الشرائي</li>
+              <li><i class="bi bi-check-circle-fill"></i> سرعة تحميل فائقة وتوافق كامل مع الموبايل</li>
+              <li><i class="bi bi-check-circle-fill"></i> ربط بكسلات التتبع وأنظمة الدفع والواتساب</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm mt-auto w-100 justify-content-center">طلب الخدمة الآن</a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="bi bi-search-heart-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">تحسين محركات البحث وتصدر جوجل (SEO)</h4>
+            <p class="text-muted small">
+              استراتيجيات سيو طويلة الأمد تضمن ظهور موقعك في الصفحة الأولى بكلمات مفتاحية بحثية عالية القيمة دون تكلفة إعلانات مستمرة.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> تحليل الكلمات المفتاحية والمنافسين</li>
+              <li><i class="bi bi-check-circle-fill"></i> تحسين السيو الداخلي والخارجي (On/Off Page)</li>
+              <li><i class="bi bi-check-circle-fill"></i> بناء الروابط الخلفية القوية وتدقيق تقني شامل</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm mt-auto w-100 justify-content-center">طلب الخدمة الآن</a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="bi bi-pie-chart-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-2">الاستشارات التسويقية والتدقيق الرقمي</h4>
+            <p class="text-muted small">
+              جلسات استشارية متعمقة لتحليل قمع المبيعات (Sales Funnel)، وتحديد نقاط الهدر في ميزانيتك، وبناء خطة نمو واضحة للربع القادم.
+            </p>
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> تدقيق شامل للحسابات الإعلانية الحالية</li>
+              <li><i class="bi bi-check-circle-fill"></i> دراسة السوق والمنافسين والفرص الضائعة</li>
+              <li><i class="bi bi-check-circle-fill"></i> خارطة طريق تسويقية قابلة للتنفيذ الفوري</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm mt-auto w-100 justify-content-center">طلب الخدمة الآن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE ROI CALCULATOR (RESTORED PREVIOUS)
+       ========================================== -->
+  <section class="py-5" id="calculator">
+    <div class="container py-4">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5">
+          <span class="section-tag">أداة تفاعلية</span>
+          <h2 class="section-title">احسب العائد المتوقع لحملتك التسويقية</h2>
+          <p class="text-muted">
+            حرك المؤشر واختر ميزانيتك التقديرية لترى تقديراً مبنياً على متوسط نتائج عملائنا في مختلف القطاعات التجارية لمعدلات الوصول، الاستفسارات، والمبيعات.
+          </p>
+          <div class="p-3 bg-surface rounded-3 border border-theme mb-3">
+            <div class="d-flex align-items-center gap-2 text-gold mb-1">
+              <i class="bi bi-lightbulb-fill"></i>
+              <span class="fw-bold">ملاحظة دقيقة:</span>
+            </div>
+            <p class="small text-muted mb-0">
+              الحسابات مبنية على متوسط أداء حقيقي بنسبة تحويل ما بين 2.5% إلى 4.8% ومضاعف عائد يتراوح بين 3x إلى 5x حسب القطاع وجودة المنتج.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="calculator-card">
+            <!-- Slider -->
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <label for="budgetRange" class="fw-bold">الميزانية الإعلانية الشهرية المقترحة:</label>
+                <span class="fw-bold text-gold fs-4" id="budgetValue">20,000 ج.م / ر.س</span>
+              </div>
+              <input type="range" class="form-range calc-range w-100" min="5000" max="150000" step="5000" value="20000" id="budgetRange">
+              <div class="d-flex justify-content-between small text-muted mt-1">
+                <span>5,000</span>
+                <span>50,000</span>
+                <span>100,000</span>
+                <span>150,000+</span>
+              </div>
+            </div>
+
+            <!-- Industry Selector -->
+            <div class="mb-4">
+              <label for="industrySelect" class="fw-bold mb-2">قطاع نشاطك التجاري:</label>
+              <select class="form-select form-select-hm" id="industrySelect">
+                <option value="ecommerce" selected>متاجر إلكترونية ومنتجات استهلاكية (E-Commerce)</option>
+                <option value="services">خدمات وشركات أعمال (B2B & Agencies)</option>
+                <option value="clinics">عيادات ومراكز طبية وتجميل (Healthcare)</option>
+                <option value="realestate">تطوير وعقارات واستثمار (Real Estate)</option>
+              </select>
+            </div>
+
+            <!-- Dynamic Outputs -->
+            <div class="row g-3">
+              <div class="col-sm-4">
+                <div class="calc-stat-pill">
+                  <p class="small text-muted mb-1">الوصول التقديري المستهدف</p>
+                  <h4 class="fw-bold text-heading mb-0" id="calcReach">180,000+</h4>
+                  <span class="badge bg-gold mt-1 small">شخص مهتم</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="calc-stat-pill">
+                  <p class="small text-muted mb-1">العملاء المحتملون (Leads)</p>
+                  <h4 class="fw-bold text-gold mb-0" id="calcLeads">650 - 950</h4>
+                  <span class="badge bg-burgundy mt-1 small">طلب مباشر</span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="calc-stat-pill">
+                  <p class="small text-muted mb-1">العائد المتوقع (Estimated ROI)</p>
+                  <h4 class="fw-bold text-heading mb-0" id="calcRoi">75,000+</h4>
+                  <span class="badge bg-success mt-1 small">3.7x عائد استثماري</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <a href="#contact" class="btn-gold">
+                <i class="bi bi-calendar2-check"></i>
+                <span>احجز خطة نموك بهذه الميزانية الآن</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       METHODOLOGY / 5-STEP ROADMAP (RESTORED PREVIOUS)
+       ========================================== -->
+  <section class="py-5 bg-surface-alt border-top border-theme" id="process">
+    <div class="container py-4">
+      <div class="text-center">
+        <span class="section-tag">منهجية العمل</span>
+        <h2 class="section-title">كيف نحول فكرتك إلى أرقام ونتائج حقيقية؟</h2>
+        <p class="section-subtitle">
+          خطوات واضحة ومدروسة تبدأ من الفهم العميق لعلامتك وتنتهي بتحقيق مبيعات متتالية ونمو مستمر.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg">
+          <div class="process-step">
+            <div class="process-num">01</div>
+            <h5 class="fw-bold mb-2">الفحص والتدقيق</h5>
+            <p class="text-muted small mb-0">دراسة نقاط قوة منتجك، تحليل منافسيك بالسوق، وتحديد الجمهور الأكثر استعداداً للشراء.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg">
+          <div class="process-step">
+            <div class="process-num">02</div>
+            <h5 class="fw-bold mb-2">بناء الاستراتيجية</h5>
+            <p class="text-muted small mb-0">تحديد زوايا الإعلانات، وتوزيع الميزانية، وصياغة الرسائل التسويقية الجذابة.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg">
+          <div class="process-step">
+            <div class="process-num">03</div>
+            <h5 class="fw-bold mb-2">التصميم والإنتاج</h5>
+            <p class="text-muted small mb-0">تصميم وتجهيز إعلانات الفيديو والصور وصفحات الهبوط بأعلى معايير الهوية البصرية.</p>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="col-md-6 col-lg">
+          <div class="process-step">
+            <div class="process-num">04</div>
+            <h5 class="fw-bold mb-2">الإطلاق والاختبار</h5>
+            <p class="text-muted small mb-0">إطلاق الحملات بحذر واختبار شرائح متعددة لمعرفة أفضل الإعلانات جلباً للمبيعات.</p>
+          </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="col-md-6 col-lg">
+          <div class="process-step">
+            <div class="process-num">05</div>
+            <h5 class="fw-bold mb-2">التوسّع ومضاعفة المبيعات</h5>
+            <p class="text-muted small mb-0">مضاعفة الميزانية على الإعلانات الفائزة (Scaling) لزيادة المبيعات دون رفع تكلفة الشراء.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PORTFOLIO & CASE STUDIES (RESTORED PREVIOUS 6 ITEMS)
+       ========================================== -->
+  <section class="py-5" id="portfolio">
+    <div class="container py-4">
+      <div class="text-center">
+        <span class="section-tag">معرض الأعمال والنتائج</span>
+        <h2 class="section-title">نماذج من قصص نجاحنا مع شركاء النمو</h2>
+        <p class="section-subtitle">
+          اطّلع على جانب من المشاريع التي قمنا بتنفيذها وحققت قفزات نوعية في الحضور الرقمي والمبيعات.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+          <button class="portfolio-filter-btn active" data-filter="all">جميع الأعمال</button>
+          <button class="portfolio-filter-btn" data-filter="branding">هويات وتصميم</button>
+          <button class="portfolio-filter-btn" data-filter="ads">حملات إعلانية</button>
+          <button class="portfolio-filter-btn" data-filter="landing">صفحات هبوط</button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="portfolioGrid">
+        <!-- Item 1 -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="ads">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="/images/hero-growth.jpg" alt="حملة إعلانية لمتجر إلكتروني" class="portfolio-img" />
+              <span class="portfolio-badge-metric">+440% نمو بالمبيعات</span>
+            </div>
+            <div class="p-4">
+              <span class="text-gold small fw-bold">حملات ممولة وتطوير قمع مبيعات</span>
+              <h5 class="fw-bold mt-1">متجر أزياء وإكسسوارات فاخرة</h5>
+              <p class="text-muted small mb-3">حققنا خفضاً في تكلفة الشراء بنسبة 35% وزيادة في المبيعات الشهرية لتتجاوز 750,000 خلال 90 يوماً.</p>
+              <a href="#contact" class="text-gold fw-bold text-decoration-none small">عرض تفاصيل الدراسة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="branding">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="/images/logo.png" alt="تصميم هوية بصرية كاملة" class="portfolio-img" />
+              <span class="portfolio-badge-metric">هوية بصرية متكاملة</span>
+            </div>
+            <div class="p-4">
+              <span class="text-gold small fw-bold">تصميم علامة تجارية ودليل إرشادي</span>
+              <h5 class="fw-bold mt-1">شركة استشارات وتطوير أعمال</h5>
+              <p class="text-muted small mb-3">بناء كامل للهوية البصرية الفاخرة مستوحاة من خطوط الأصالة والحداثة متضمنة الشعار وتطبيقات العلامة.</p>
+              <a href="#contact" class="text-gold fw-bold text-decoration-none small">عرض تفاصيل الدراسة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="landing">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="/images/hero-growth.jpg" alt="لاندينج بيدج عالية التحويل" class="portfolio-img" />
+              <span class="portfolio-badge-metric">معدل تحويل 4.6%</span>
+            </div>
+            <div class="p-4">
+              <span class="text-gold small fw-bold">تصميم وبرمجة صفحة هبوط</span>
+              <h5 class="fw-bold mt-1">منصة كورسات وتدريب مهني</h5>
+              <p class="text-muted small mb-3">صفحة هبوط فائقة السرعة ومتجاوبة أدت إلى تسجيل أكثر من 1,800 مشترك خلال الحملة الافتتاحية الأولى.</p>
+              <a href="#contact" class="text-gold fw-bold text-decoration-none small">عرض تفاصيل الدراسة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="ads">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="/images/hero-growth.jpg" alt="حملة عيادات تجميل" class="portfolio-img" />
+              <span class="portfolio-badge-metric">1,200 حجز مؤكد</span>
+            </div>
+            <div class="p-4">
+              <span class="text-gold small fw-bold">إعلانات ليدز وتوليد عملاء</span>
+              <h5 class="fw-bold mt-1">مجمع عيادات طبية وتجميلية</h5>
+              <p class="text-muted small mb-3">استهداف جغرافي دقيق وإدارة رسائل الواتساب الإعلانية لرفع معدل تأكيد الحجوزات إلى 82%.</p>
+              <a href="#contact" class="text-gold fw-bold text-decoration-none small">عرض تفاصيل الدراسة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="branding">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="/images/logo.png" alt="تصميم هوية لمطعم وسلسلة كافيهات" class="portfolio-img" />
+              <span class="portfolio-badge-metric">باكيجينج وعلامة تجارية</span>
+            </div>
+            <div class="p-4">
+              <span class="text-gold small fw-bold">تصميم الهوية والتغليف</span>
+              <h5 class="fw-bold mt-1">سلسلة كافيهات راقية</h5>
+              <p class="text-muted small mb-3">تصميم الأكواب والأكياس والمينيو الرقمي بمزيج فاخر من البرغندي والذهب الدافئ لترك انطباع لا ينسى.</p>
+              <a href="#contact" class="text-gold fw-bold text-decoration-none small">عرض تفاصيل الدراسة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="landing">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="/images/hero-growth.jpg" alt="متجر سلة وزد إلكتروني" class="portfolio-img" />
+              <span class="portfolio-badge-metric">+280% طلبات مكررة</span>
+            </div>
+            <div class="p-4">
+              <span class="text-gold small fw-bold">تطوير متجر وتجربة مستخدم</span>
+              <h5 class="fw-bold mt-1">متجر عطور وبخور ملكي</h5>
+              <p class="text-muted small mb-3">تحسين مسار الشراء بنقرة واحدة وربط العروض الترويجية الذكية في سلة التسوق لزيادة متوسط قيمة الطلب.</p>
+              <a href="#contact" class="text-gold fw-bold text-decoration-none small">عرض تفاصيل الدراسة <i class="bi bi-arrow-left"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PACKAGES & PRICING (RESTORED PREVIOUS 3 TIERS)
+       ========================================== -->
+  <section class="py-5 bg-surface-alt border-top border-theme" id="pricing">
+    <div class="container py-4">
+      <div class="text-center">
+        <span class="section-tag">باقات الاستثمار والخدمات</span>
+        <h2 class="section-title">باقات تسويقية مصممة لتناسب مرحلة نموك</h2>
+        <p class="section-subtitle">
+          خيارات مرنة وواضحة تناسب المشاريع الناشئة والشركات المتوسعة مع التزام كامل بالنتائج والجودة.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <!-- Tier 1 -->
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <h4 class="fw-bold mb-1">باقة الانطلاق</h4>
+            <p class="text-muted small">للشركات والمشاريع الناشئة الراغبة في تأسيس حضورها الإعلاني</p>
+            <div class="my-3">
+              <span class="fs-2 fw-bold text-heading" style="font-family: 'Plus Jakarta Sans';">6,500</span>
+              <span class="text-muted">ج.م / ر.س شهرياً</span>
+            </div>
+            <hr class="border-theme">
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> إدارة الحملات على منصتين إعلانيتين</li>
+              <li><i class="bi bi-check-circle-fill"></i> 12 تصميم إعلاني وسوشيال ميديا احترافي</li>
+              <li><i class="bi bi-check-circle-fill"></i> كتابة النصوص والرسائل الإعلانية المقنعة</li>
+              <li><i class="bi bi-check-circle-fill"></i> ربط وتدقيق بكسلات التتبع الأساسية</li>
+              <li><i class="bi bi-check-circle-fill"></i> تقرير شهري مفصل بالأداء والمبيعات</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm w-100 justify-content-center mt-auto">اختر باقة الانطلاق</a>
+          </div>
+        </div>
+
+        <!-- Tier 2 (Popular) -->
+        <div class="col-lg-4">
+          <div class="pricing-card popular">
+            <div class="popular-ribbon">⭐ الأكثر طلباً للنمو السريع</div>
+            <h4 class="fw-bold mb-1">باقة النمو الذهبية</h4>
+            <p class="text-muted small">للأنشطة التجارية والمتاجر الساعية لمضاعفة المبيعات والاستحواذ</p>
+            <div class="my-3">
+              <span class="fs-1 fw-bold text-gold" style="font-family: 'Plus Jakarta Sans';">12,500</span>
+              <span class="text-muted">ج.م / ر.س شهرياً</span>
+            </div>
+            <hr class="border-theme">
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> إدارة شاملة على Meta و Google و TikTok</li>
+              <li><i class="bi bi-check-circle-fill"></i> 24 تصميماً + 6 مقاطع فيديو ريلز إعلانية</li>
+              <li><i class="bi bi-check-circle-fill"></i> بناء قمع مبيعات متكامل (Sales Funnel)</li>
+              <li><i class="bi bi-check-circle-fill"></i> تصميم وتطوير صفحة هبوط مجاناً (Landing Page)</li>
+              <li><i class="bi bi-check-circle-fill"></i> اختبارات A/B دورية وتحسين تكلفة الاقتناء</li>
+              <li><i class="bi bi-check-circle-fill"></i> تقرير أسبوعي مباشر وجلسة متابعة مع حنان المراكبي</li>
+            </ul>
+            <a href="#contact" class="btn-gold w-100 justify-content-center mt-auto">احجز باقة النمو الذهبية</a>
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <h4 class="fw-bold mb-1">باقة النخبة المتكاملة</h4>
+            <p class="text-muted small">للشركات الكبرى والعلامات التجارية التي تحتاج فريق تسويق متكامل</p>
+            <div class="my-3">
+              <span class="fs-2 fw-bold text-heading" style="font-family: 'Plus Jakarta Sans';">22,000</span>
+              <span class="text-muted">ج.م / ر.س شهرياً</span>
+            </div>
+            <hr class="border-theme">
+            <ul class="service-feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> إدارة ميديا بايينج غير محدودة لكافة المنصات</li>
+              <li><i class="bi bi-check-circle-fill"></i> إنتاج محتوى كامل (فيديو، جرافيك، ريلز)</li>
+              <li><i class="bi bi-check-circle-fill"></i> استراتيجية تصدر السيو (SEO) وتحسين المتجر</li>
+              <li><i class="bi bi-check-circle-fill"></i> مدير حساب مخصص وخبير أداء متفرغ</li>
+              <li><i class="bi bi-check-circle-fill"></i> دعم على مدار الساعة طوال أيام الأسبوع</li>
+            </ul>
+            <a href="#contact" class="btn-outline-hm w-100 justify-content-center mt-auto">طلب باقة النخبة</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS (RESTORED PREVIOUS)
+       ========================================== -->
+  <section class="py-5" id="testimonials">
+    <div class="container py-4">
+      <div class="text-center">
+        <span class="section-tag">شهادات وتوصيات</span>
+        <h2 class="section-title">ماذا يقول عملاؤنا عن التعاون معنا؟</h2>
+        <p class="section-subtitle">
+          فخورون بآراء شركائنا الذين لمسوا فارقاً حقيقياً في قوة الحضور الرقمي وأرقام المبيعات.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Review 1 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <div class="d-flex text-gold mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted small flex-grow-1">
+              "العمل مع أستاذة حنان المراكبي وفريقها نقل متجرنا من الخسارة إلى تحقيق أرباح صافية ممتازة. الحملات الإعلانية والتصاميم الراقية أعطت عملاءنا انطباعاً بأننا علامة تجارية عالمية."
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-theme">
+              <div class="bg-gold text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px;">
+                م.س
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0">م/ سامح عبد العزيز</h6>
+                <p class="text-muted small mb-0">مالك متجر فخامة للعطور</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <div class="d-flex text-gold mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted small flex-grow-1">
+              "تصميم الهوية البصرية وصفحة الهبوط كان مبهراً وفاخر جداً. استطعنا جمع أكثر من 1,500 عميل مهتم في أول أسبوعين فقط من إطلاق الحملة. التزام ودقة في المواعيد واحترافية استثنائية."
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-theme">
+              <div class="bg-burgundy text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px;">
+                د.ن
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0">د/ نورهان الشناوي</h6>
+                <p class="text-muted small mb-0">المدير التنفيذي لمجمع ديرما لايف</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <div class="d-flex text-gold mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted small flex-grow-1">
+              "التقارير الأسبوعية ووضوح الأرقام أراحتنا كثيراً من وجع الرأس المعتاد مع الوكالات الأخرى. حنان المراكبي HM تهتم بنجاح المشروع كأنه مشروعهم الشخصي."
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-theme">
+              <div class="bg-gold text-white rounded-circle d-flex align-items-center justify-content-center fw-bold" style="width: 44px; height: 44px;">
+                أ.خ
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0">أ/ خالد بن عبد الله</h6>
+                <p class="text-muted small mb-0">مؤسس منصة مسار للاستشارات</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ ACCORDION (RESTORED PREVIOUS)
+       ========================================== -->
+  <section class="py-5 bg-surface-alt border-top border-theme" id="faq">
+    <div class="container py-4">
+      <div class="text-center">
+        <span class="section-tag">الأسئلة المتكررة</span>
+        <h2 class="section-title">إجابات واضحة لكل ما يدور في ذهنك</h2>
+        <p class="section-subtitle">
+          إليك أهم الاستفسارات الشائعة حول منهجية عملنا وإدارة الحملات والتصاميم.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion accordion-hm" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ما المدة الزمنية المتوقعة للبدء في رؤية مبيعات ونتائج ملموسة؟
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  عادة ما تبدأ النتائج الأولية ومؤشرات التفاعل في الظهور خلال أول 5 إلى 7 أيام من إطلاق الحملات الإعلانية واكتمال مرحلة الاختبارات الأولية. أما الاستقرار التام ومضاعفة الأرباح (Scaling) فيتحقق تدريجياً بين الأسبوع الثالث والرابع من التحسين المستمر.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  هل تشمل خدماتكم تصميم الإعلانات وكتابة المحتوى أم إدارة الحملات فقط؟
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  نحن نوفر حلولاً تسويقية 360 درجة متكاملة. نقوم بكتابة النصوص الإعلانية (Copywriting)، وتصميم الإعلانات المصورة، ومونتاج مقاطع الفيديو، وتجهيز صفحات الهبوط بالكامل، إلى جانب الإدارة والمتابعة والتحسين اللحظي للحملات.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  كيف يتم دفع الميزانية الإعلانية للمنصات (فيسبوك، جوجل، تيك توك)؟
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  الميزانية الإعلانية تُسحب مباشرة من بطاقتك الائتمانية أو حسابك الإعلاني الخاص بك لضمان الشفافية والأمان الكاملين وملكيتك لبيانات الحساب، وتكون أتعاب وكالة حنان المراكبي HM منفصلة مقابل الإدارة والاستراتيجية والإنتاج الإبداعي.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  هل تقدمون خدمات إعادة تصميم الهوية للشركات القائمة؟
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  نعم، نقوم بعمل Rebranding شامل للشركات التي ترغب في تجديد صورتها ومواكبة السوق وتغيير مكانتها لتبدو أكثر فخامة واحترافية مع الحفاظ على جوهر العلامة وعملائها الحاليين.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & BOOKING SECTION (RESTORED PREVIOUS)
+       ========================================== -->
+  <section class="py-5" id="contact">
+    <div class="container py-4">
+      <div class="row gy-5">
+        <!-- Contact Information -->
+        <div class="col-lg-5">
+          <span class="section-tag">تواصل معنا مباشرة</span>
+          <h2 class="section-title">دعنا نناقش أهداف مشروعك القادم</h2>
+          <p class="text-muted mb-4">
+            سواء كنت تبدأ من الصفر أو ترغب في مضاعفة أرقامك الحالية، فريق حنان المراكبي HM جاهز لتقديم استشارة مخصصة تناسب أهدافك.
+          </p>
+
+          <!-- Contact Pills -->
+          <a href="https://wa.me/201000000000?text=مرحباً%20حنان%20المراكبي،%20أرغب%20في%20استشارة%20تسويقية%20لمشروعي" target="_blank" class="contact-info-pill">
+            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 24px;">
+              <i class="bi bi-whatsapp"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">واتساب مباشر ومحادثة فورية</h6>
+              <p class="text-muted small mb-0">تواصل مباشر مع حنان المراكبي (متاح الآن)</p>
+            </div>
+          </a>
+
+          <a href="tel:+201000000000" class="contact-info-pill">
+            <div class="bg-gold text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 22px;">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">الاتصال الهاتفي المباشر</h6>
+              <p class="text-muted small mb-0">+20 100 000 0000 (من 9ص إلى 7م)</p>
+            </div>
+          </a>
+
+          <a href="mailto:contact@hananelmarakby.com" class="contact-info-pill">
+            <div class="bg-burgundy text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 22px;">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">البريد الإلكتروني الرسمي</h6>
+              <p class="text-muted small mb-0">contact@hananelmarakby.com</p>
+            </div>
+          </a>
+
+          <div class="p-3 bg-surface rounded-4 border border-theme mt-4">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-geo-alt-fill text-gold fs-3"></i>
+              <div>
+                <h6 class="fw-bold mb-1">المقر وخدمة العملاء</h6>
+                <p class="small text-muted mb-0">القاهرة - جمهورية مصر العربية | ونخدم عملاءنا في السعودية، الإمارات، والخليج العربي أونلاين.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="contact-card">
+            <h4 class="fw-bold mb-2">احجز استشارة تسويقية مجانية</h4>
+            <p class="text-muted small mb-4">املأ النموذج وسيقوم فريق حنان المراكبي بالتواصل معك خلال أقل من 3 ساعات بدراسة أولية مخصصة.</p>
+
+            <form id="leadContactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="userName" class="form-label fw-bold small">الاسم الكامل *</label>
+                  <input type="text" class="form-control form-control-hm" id="userName" placeholder="مثال: أحمد محمود" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="userPhone" class="form-label fw-bold small">رقم الهاتف / الواتساب *</label>
+                  <input type="tel" class="form-control form-control-hm" id="userPhone" placeholder="+20 100 ... أو +966 ..." required>
+                </div>
+                <div class="col-md-6">
+                  <label for="userEmail" class="form-label fw-bold small">البريد الإلكتروني</label>
+                  <input type="email" class="form-control form-control-hm" id="userEmail" placeholder="name@company.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="serviceNeeded" class="form-label fw-bold small">الخدمة المطلوبة *</label>
+                  <select class="form-select form-select-hm" id="serviceNeeded" required>
+                    <option value="" selected disabled>اختر نوع الخدمة...</option>
+                    <option value="ads">إدارة الحملات الإعلانية الممولة والميديا بايينج</option>
+                    <option value="branding">تصميم هوية بصرية وبراندينج كامل</option>
+                    <option value="landing">تصميم وتطوير لاندينج بيدج / متجر إلكتروني</option>
+                    <option value="content">صناعة المحتوى وفيديوهات السوشيال ميديا</option>
+                    <option value="seo">تحسين محركات البحث وتصدر جوجل (SEO)</option>
+                    <option value="consulting">استشارة تسويقية شاملة وتحليل أداء</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="projectDetails" class="form-label fw-bold small">نبذة عن مشروعك والهدف المراد تحقيقه</label>
+                  <textarea class="form-control form-control-hm" id="projectDetails" rows="4" placeholder="اكتب نبذة عن مجالك، رابط متجرك أو صفحتك الحالية، والميزانية المتوقعة..."></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-gold w-100 py-3 fs-6 justify-content-center" id="submitBtn">
+                    <i class="bi bi-send-fill"></i>
+                    <span>إرسال طلب الاستشارة والتحليل المجاني</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Success Alert Toast -->
+              <div class="alert alert-success mt-3 d-none align-items-center gap-2" id="formSuccessAlert" role="alert">
+                <i class="bi bi-check-circle-fill fs-4"></i>
+                <div>
+                  <strong>تم استلام طلبك بنجاح!</strong> ستقوم أستاذة حنان المراكبي أو أحد مسؤولي الفريق بالتواصل معك عبر الواتساب فوراً.
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER (RESTORED PREVIOUS RICH FOOTER)
+       ========================================== -->
+  <footer class="footer-hm">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="/logo.png" alt="شعار الدكتورة حنان المراكبي" style="width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--color-gold); object-fit: cover;" />
+            <div>
+              <h5 class="mb-0 text-white fw-bold">الدكتورة حنان المراكبي</h5>
+              <span style="font-size: 0.6rem; color: #D9B57F; font-weight: 700; letter-spacing: 0.05em; font-family: 'Plus Jakarta Sans', sans-serif; display: block;">HM MARKETING & DESIGN</span>
+            </div>
+          </div>
+          <p class="small text-muted" style="line-height: 1.8;">
+            وكالة متخصصة في قيادة العلامات التجارية نحو النمو الرقمي المتسارع عبر مزيج استثنائي من إعلانات الأداء والتصميم البصري الفاخر.
+          </p>
+          <div class="d-flex mt-3">
+            <a href="https://wa.me/201000000000" class="social-icon-btn" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com" class="social-icon-btn" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="social-icon-btn" title="لينكد إن"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://tiktok.com" class="social-icon-btn" title="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" class="social-icon-btn" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white fw-bold mb-3">روابط سريعة</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#hero">الرئيسية</a></li>
+            <li class="mb-2"><a href="#about">من نحن</a></li>
+            <li class="mb-2"><a href="#services">الخدمات</a></li>
+            <li class="mb-2"><a href="#portfolio">أعمالنا</a></li>
+            <li class="mb-2"><a href="#pricing">الباقات</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-6 col-lg-3">
+          <h6 class="text-white fw-bold mb-3">خدماتنا الرئيسية</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#services">الحملات الممولة (Media Buying)</a></li>
+            <li class="mb-2"><a href="#services">تصميم الهوية البصرية (Branding)</a></li>
+            <li class="mb-2"><a href="#services">تصميم صفحات الهبوط (UI/UX)</a></li>
+            <li class="mb-2"><a href="#services">صناعة المحتوى وفيديوهات الريلز</a></li>
+            <li class="mb-2"><a href="#services">تحسين محركات البحث (SEO)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3">
+          <h6 class="text-white fw-bold mb-3">النشرة التسويقية الشهرية</h6>
+          <p class="small text-muted">احصل على أحدث أسرار زيادة مبيعات المتاجر الرقمية واستراتيجيات الإعلانات الممولة.</p>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control form-control-sm bg-dark text-white border-secondary" placeholder="بريدك الإلكتروني">
+            <button class="btn btn-gold btn-sm" type="button">اشتراك</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-4 mt-4 border-top border-secondary small">
+        <p class="mb-0 text-muted">جميع الحقوق محفوظة © <span id="currentYear"></span> لحنان المراكبي | HM Marketing Agency</p>
+        <p class="mb-0 text-gold fw-bold">تصميم وتطوير عالي الأداء معتمد</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       WHATSAPP FLOATING BUTTON (FLOAT-UP & RED DOT)
+       ========================================== -->
+  <div class="whatsapp-float-container">
+    <div class="wa-popup-bubble">
+      <span>مرحباً بك! تواصل مباشرة مع حنان المراكبي 👋</span>
+    </div>
+    <a href="https://wa.me/201000000000?text=مرحباً%20حنان%20المراكبي،%20أرغب%20في%20استشارة%20تسويقية%20لمشروعي" target="_blank" class="whatsapp-btn" id="whatsappFloatingBtn" title="تواصل عبر الواتساب الآن">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-red-dot" title="رسالة جديدة">1</span>
+    </a>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" title="العودة لأعلى">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- ==========================================
+       SCRIPTS (BOOTSTRAP 5 & VANILLA JS)
+       ========================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set current year
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // ----------------------------------------------------
+      // 1. Dark / Light Theme Toggle
+      // ----------------------------------------------------
+      const htmlEl = document.documentElement;
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeToggleBtnMobile = document.getElementById('themeToggleBtnMobile');
+      const themeIcon = document.getElementById('themeIcon');
+      const themeIconMobile = document.getElementById('themeIconMobile');
+
+      const savedTheme = localStorage.getItem('hm_theme') || 'light';
+      applyTheme(savedTheme);
+
+      function applyTheme(theme) {
+        htmlEl.setAttribute('data-theme', theme);
+        localStorage.setItem('hm_theme', theme);
+        const isDark = theme === 'dark';
+        if (themeIcon) {
+          themeIcon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+        }
+        if (themeIconMobile) {
+          themeIconMobile.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+        }
+      }
+
+      function toggleTheme() {
+        const currentTheme = htmlEl.getAttribute('data-theme');
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(nextTheme);
+      }
+
+      if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);
+      if (themeToggleBtnMobile) themeToggleBtnMobile.addEventListener('click', toggleTheme);
+
+      // ----------------------------------------------------
+      // 2. Scroll Progress & Sticky Navbar
+      // ----------------------------------------------------
+      const navbar = document.getElementById('mainNavbar');
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      const scrollProgress = document.getElementById('scrollProgress');
+
+      window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        
+        if (scrollProgress) {
+          scrollProgress.style.width = scrollPercent + '%';
+        }
+
+        if (scrollTop > 40) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+
+        if (scrollTop > 400) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+
+        updateActiveNavLink();
+        checkCounters();
+      });
+
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // ----------------------------------------------------
+      // Smooth Scrolling Helper Function with Sticky Navbar Offset
+      // ----------------------------------------------------
+      function scrollToTargetElement(targetSelector) {
+        if (!targetSelector || targetSelector === '#' || !targetSelector.startsWith('#')) return;
+        const targetElement = document.querySelector(targetSelector);
+        if (!targetElement) return;
+
+        // Force body & html to unlock scroll in case Bootstrap locked it
+        document.body.style.overflow = '';
+        document.body.style.removeProperty('overflow');
+        document.body.classList.remove('modal-open');
+        document.documentElement.style.overflow = '';
+        document.documentElement.style.removeProperty('overflow');
+
+        // Clean up any lingering backdrops
+        document.querySelectorAll('.offcanvas-backdrop').forEach(b => {
+          b.classList.remove('show');
+          setTimeout(() => b.remove(), 150);
+        });
+
+        const navbar = document.getElementById('mainNavbar');
+        const navOffset = (navbar ? navbar.getBoundingClientRect().height : 70) + 12;
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const targetPosition = elementPosition + window.pageYOffset - navOffset;
+
+        window.scrollTo({
+          top: Math.max(0, targetPosition),
+          behavior: 'smooth'
+        });
+      }
+
+      // ----------------------------------------------------
+      // Offcanvas Side Drawer Smooth Scrolling & Close Handler
+      // ----------------------------------------------------
+      const sideMenuDrawerEl = document.getElementById('sideMenuDrawer');
+      const sideDrawerNavLinks = document.querySelectorAll('#sideMenuDrawer a[href^="#"]');
+
+      let targetSectionToScroll = null;
+      let scrollFallbackTimeout = null;
+
+      sideDrawerNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (!targetId || targetId === '#' || !targetId.startsWith('#')) return;
+          
+          targetSectionToScroll = targetId;
+
+          // Hide offcanvas using Bootstrap if available
+          if (sideMenuDrawerEl) {
+            try {
+              if (window.bootstrap && bootstrap.Offcanvas) {
+                const bsOffcanvas = bootstrap.Offcanvas.getInstance(sideMenuDrawerEl) || bootstrap.Offcanvas.getOrCreateInstance(sideMenuDrawerEl);
+                if (bsOffcanvas) bsOffcanvas.hide();
+              }
+            } catch (err) {
+              // fallback handled by data-bs-dismiss
+            }
+          }
+
+          // Trigger fallback scroll in case hidden.bs.offcanvas doesn't fire
+          if (scrollFallbackTimeout) clearTimeout(scrollFallbackTimeout);
+          scrollFallbackTimeout = setTimeout(() => {
+            if (targetSectionToScroll) {
+              scrollToTargetElement(targetSectionToScroll);
+              targetSectionToScroll = null;
+            }
+          }, 320);
+        });
+      });
+
+      if (sideMenuDrawerEl) {
+        sideMenuDrawerEl.addEventListener('hidden.bs.offcanvas', () => {
+          if (targetSectionToScroll) {
+            const target = targetSectionToScroll;
+            targetSectionToScroll = null;
+            if (scrollFallbackTimeout) clearTimeout(scrollFallbackTimeout);
+            setTimeout(() => {
+              scrollToTargetElement(target);
+            }, 60);
+          }
+        });
+      }
+
+      // Desktop Nav Links Smooth Scrolling
+      document.querySelectorAll('.nav-link-hm[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (!targetId || targetId === '#' || !targetId.startsWith('#')) return;
+          e.preventDefault();
+          scrollToTargetElement(targetId);
+        });
+      });
+
+      // ----------------------------------------------------
+      // 3. Smooth Scrollspy Active Link Detection
+      // ----------------------------------------------------
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link-hm');
+      const offcanvasLinks = document.querySelectorAll('.offcanvas-link');
+
+      function updateActiveNavLink() {
+        const scrollPosition = window.scrollY + 120;
+        sections.forEach(section => {
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          const id = section.getAttribute('id');
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+            offcanvasLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }
+
+      // ----------------------------------------------------
+      // 4. Interactive ROI Calculator Logic
+      // ----------------------------------------------------
+      const budgetRange = document.getElementById('budgetRange');
+      const budgetValue = document.getElementById('budgetValue');
+      const industrySelect = document.getElementById('industrySelect');
+      const calcReach = document.getElementById('calcReach');
+      const calcLeads = document.getElementById('calcLeads');
+      const calcRoi = document.getElementById('calcRoi');
+
+      const multipliers = {
+        ecommerce: { reachPerUnit: 9, leadRate: 0.045, roiFactor: 3.8 },
+        services: { reachPerUnit: 6, leadRate: 0.028, roiFactor: 3.2 },
+        clinics: { reachPerUnit: 7.5, leadRate: 0.038, roiFactor: 4.2 },
+        realestate: { reachPerUnit: 5, leadRate: 0.018, roiFactor: 4.9 }
+      };
+
+      function calculateROI() {
+        if (!budgetRange || !industrySelect) return;
+        const budget = parseInt(budgetRange.value, 10);
+        const industry = industrySelect.value;
+        const config = multipliers[industry] || multipliers.ecommerce;
+
+        budgetValue.textContent = budget.toLocaleString('ar-EG') + ' ج.م / ر.س';
+
+        const estimatedReach = Math.round(budget * config.reachPerUnit);
+        const estimatedMinLeads = Math.round((budget / 100) * (config.leadRate * 75));
+        const estimatedMaxLeads = Math.round(estimatedMinLeads * 1.45);
+        const estimatedRevenue = Math.round(budget * config.roiFactor);
+
+        calcReach.textContent = estimatedReach.toLocaleString('ar-EG') + '+';
+        calcLeads.textContent = `${estimatedMinLeads.toLocaleString('ar-EG')} - ${estimatedMaxLeads.toLocaleString('ar-EG')}`;
+        calcRoi.textContent = estimatedRevenue.toLocaleString('ar-EG') + '+ ج.م';
+      }
+
+      if (budgetRange && industrySelect) {
+        budgetRange.addEventListener('input', calculateROI);
+        industrySelect.addEventListener('change', calculateROI);
+        calculateROI();
+      }
+
+      // ----------------------------------------------------
+      // 5. Portfolio Filter Tabs
+      // ----------------------------------------------------
+      const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          portfolioItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            if (filterValue === 'all' || category === filterValue) {
+              item.style.display = 'block';
+              setTimeout(() => { item.style.opacity = '1'; }, 50);
+            } else {
+              item.style.opacity = '0';
+              setTimeout(() => { item.style.display = 'none'; }, 300);
+            }
+          });
+        });
+      });
+
+      // ----------------------------------------------------
+      // 6. Contact Form Submission (Vanilla JS Feedback)
+      // ----------------------------------------------------
+      const contactForm = document.getElementById('leadContactForm');
+      const formSuccessAlert = document.getElementById('formSuccessAlert');
+      const submitBtn = document.getElementById('submitBtn');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> جاري إرسال طلبك...';
+
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="bi bi-send-fill"></i> <span>إرسال طلب الاستشارة والتحليل المجاني</span>';
+            formSuccessAlert.classList.remove('d-none');
+            formSuccessAlert.classList.add('d-flex');
+            contactForm.reset();
+
+            setTimeout(() => {
+              formSuccessAlert.classList.add('d-none');
+              formSuccessAlert.classList.remove('d-flex');
+            }, 8000);
+          }, 800);
+        });
+      }
+
+      // ----------------------------------------------------
+      // 7. Interactive Numbers Counter on Scroll
+      // ----------------------------------------------------
+      let animatedCounters = false;
+      const statBoxes = document.querySelectorAll('.stat-number');
+
+      function checkCounters() {
+        if (animatedCounters || statBoxes.length === 0) return;
+        const triggerPos = window.innerHeight * 0.85;
+        const rect = statBoxes[0].getBoundingClientRect();
+
+        if (rect.top < triggerPos) {
+          animatedCounters = true;
+          statBoxes.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-target'), 10);
+            if (!target) return;
+            let count = 0;
+            const step = Math.ceil(target / 40);
+            const timer = setInterval(() => {
+              count += step;
+              if (count >= target) {
+                count = target;
+                clearInterval(timer);
+              }
+              const suffix = stat.textContent.includes('+') ? '+' : (stat.textContent.includes('%') ? '%' : '');
+              stat.textContent = count + suffix;
+            }, 30);
+          });
+        }
+      }
+
+      checkCounters();
+    });
+  </script>
+</body>
+</html>
